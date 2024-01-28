@@ -2,6 +2,47 @@
 
 This repo is dedicated to making minimal repos of existing defi primatives. 
 
+## Personal Notes:
+Source: https://www.youtube.com/watch?v=z9FgWvUai28&list=PLbbtODcOYIoGC8c5-gs0EYzpYVUPdmqO3
+1. All benefits of blockchain - decentralised governance + autonomy + self-custody + open + censorship-free + transparent + composable + interoperable
+2. Challenges: onramping (fiat to crypto) + UX
+
+### Categories of Defi
+1. Category 1: Lending & Borrowing - Maker | Compound | AAVE
+   - To borrow A, provide B as collateral
+   - Value of B > Value of A borrowed
+   - Liquidation - decided thresholds for sale of collateral to recoup borrowed amount to keep the DEX solvent - if x.value(collateral) < threshold value | eg: x = 0.7 | threshold = 0.8(collateral) | collateral = 1 B | borrowed = 1 A = 0.75 B
+   - Incentive mechanisms to report and liquidate - bots + algorithms - keeps DEX solvent
+   - 
+3. Category 2: DEX - Uniswap | PancakeSwap | SushiSwap | Kyber | Bancor
+4. Category 3: Derivatives - Synthetix | Augur
+5. Category 4: Prediction Markets - Polymarket | Fore Protocol | Gnosis
+   - Conditional tokens - predicated on outcome of real-life events
+   - Oracles = critical
+   - 
+6. Reference Apps - Instadapp
+
+### Defi Building Blocks
+1. Assets
+   - Native - ether - store of value
+   - Tokens - fungible - ERC20 - Stablecoins | DAI | USDC | USDT
+   - Stablecoins - assets equivalent dollars kept offchain = centralisation + trust on company
+   - Tokens - nonfungible - ERC721
+2. Deposit, Mint & Burn functionalities
+   - Secure Vault to deposit and handle user funds
+   - Deposit collateral (Deposit B) | Borrow asset A (Mint token A)
+   - Repay asset A (Burn A) | Give back collateral to calling address who deposited it initially
+3. DEX
+   - Buy & sell onchain in Smart Contract
+   - Alice => send token A to smart contract + buy order for token B | Bob => send token B to smart contract + sell order for token B | Order matching done | Alice gets B - Bob gets A
+4. Oracles
+   - Offchain data
+   - Critical for pricing | Outcomes of events | Pseudo-random number generation
+   - Need to trust these APIs
+5. DAO
+   - Decentralised governance and onchain organisation to involve community
+6. Other Defi projects - Composability
+
 
 | :exclamation:  ** WARNING None of the contracts are audited!  |
 |-----------------------------------------|
